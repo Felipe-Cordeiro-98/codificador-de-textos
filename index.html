@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de textos</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="logo alura">
+        </a>
+    </header>
+    <main>
+        <section class="painel__entrada">
+            <textarea name="input" id="input_text" cols="30" rows="30" placeholder="Digite seu texto"
+                spellcheck="false"></textarea>
+            <span><img src="assets/bi_exclamation-circle-fill.png" alt="exclamação">Apenas letras minúsculas e sem
+                acento.</span>
+
+            <div class="painel__entrada__botoes">
+                <button class="button" type="button" id="btn_encode" onclick="criptografar()">Criptografar</button>
+                <button class="button" type="button" id="btn_decode"
+                    onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="painel__saida">
+            <div class="painel__saida__tela__1" id="painel__saida__tela__1">
+                <img class="painel__saida__tela__1__imagem" src="assets/High quality products 1 1.png" alt="desenho">
+                <h2 class="painel__saida__tela__1__texto">Nenhuma mensagem encontrada</h2>
+                <p class="painel__saida__tela__1__texto">Digite um texto que você deseja criptografar ou
+                    descriptografar.</p>
+            </div>
+
+            <div class="painel__saida__tela__2" id="painel__saida__tela__2">
+                <h2 id="header__criptografado">Criptografado <img src="assets/cadeado-fechado.png"
+                        alt="cadeado-fechado"></h2>
+                <h2 id="header__descriptografado">Descriptografado <img src="assets/cadeado-aberto.png"
+                        alt="cadeado-aberto"></h2>
+                <textarea name="input_text__resultado" id="input_text__resultado" cols="30" rows="20" spellcheck="false"
+                    readonly></textarea>
+                <button class="button" type="button" id="btn_copy" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Site feito por - <img src="assets/LINKEDIN_icon-icons.com_65488.png" alt="logo linkedin"><a
+                href="https://www.linkedin.com/in/felipe-cordeiro-2a3285286/" target="_blank">Felipe Corderio</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
